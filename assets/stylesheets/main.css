@@ -1,0 +1,584 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar {
+
+}
+
+.logo-lg {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border: 1px solid white;
+  width: 100%;
+  background-color: #eee;
+}
+
+nav span a {
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  height: 0.1em;
+}
+
+nav span a:hover {
+  color: #fff;
+  background-color: #092327;
+  border: 1px solid #092327;
+  border-radius: 2px;
+  height: 0.9em;
+}
+
+nav span a {
+  -webkit-transition-property: color background-color height;
+  -webkit-transition-duration: .6s;
+  transition-property: color background-color height;
+  transition-duration: .6s;
+}
+
+.nav-text {
+  padding-right: 2%;
+  align-self: center;
+  color: #000;
+}
+
+.nav-text:last-child {
+}
+
+.hero {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url("https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/06/spiders-webs-2.jpg?resize=717%2C478&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  width: auto;
+  margin-bottom: 0px;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+}
+
+.hero h3 {
+  padding-top: 10%;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+  color: #fff;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+}
+
+.hero a {
+
+}
+
+.hero-btn {
+  height: 40px;
+  width: 133px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+}
+
+.hero-btn:hover {
+  color: #000;
+  border-color: silver;
+  background-color: silver;
+}
+
+.hero-btn {
+  -webkit-transition-property: color border-color background-color;
+  -webkit-transition-duration: .3s;
+  transition-property: color border-color background-color;
+  transition-duration: .3s;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-btn {
+    position: fixed;
+      top: 85%;
+      left: 90%;
+      color: #fff;
+  }
+}
+
+#chat-circle {
+  color: #fff;
+}
+
+#chat {
+  color: #092327;
+}
+
+#chat:hover {
+  color: #90c2e7;
+}
+
+#chat {
+  -webkit-transition-property: color;
+  -webkit-transition-duration: .2s;
+  transition-property: color;
+  transition-duration: .2s;
+}
+
+#chat-menu {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+    top: 43%;
+    left: 71%;
+  height: 0%;
+  width: 20%;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 3%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#chat-menu {
+  -webkit-transition-property: opacity height width;
+  -webkit-transition-duration: .3s;
+  transition-property: opacity height width;
+  transition-duration: .3s;
+}
+
+#chat-menu input[type='submit'] {
+  align-self: center;
+  height: 10%;
+  width: 40%;
+  background-color: #4e8098;
+  border: 1px solid #4e8098;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px gray;
+  font-weight: 700;
+}
+
+#chat-menu input[type='submit']:hover {
+  background-color: #00a9a5;
+  border-color: #00a9a5;
+}
+
+.services {
+  background-image: linear-gradient(
+    to right top, #0b5351, #266e75, #458a9b, #68a6c1, #90c2e7);
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-title h3 {
+  text-align: center;
+  color: #fff;
+  padding-top: 5%;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.services-blocks {
+  display: flex;
+  margin-top: 8%;
+  height: 55%;
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: space-around;
+}
+
+.service-block-1 {
+  flex-basis: 27%;
+  text-align: center;
+}
+
+.service-block-2 {
+  flex-basis: 27%;
+  text-align: center;
+}
+
+.service-block-3 {
+  flex-basis: 27%;
+  text-align: center;
+}
+
+.service-subtitle {
+  font-size: 32px;
+  font-weight: 300;
+  font-variant: small-caps;
+  margin-top: 10%;
+}
+
+.service-text {
+  margin-top: 10%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.service-icons {
+  color: #fff;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.portfolio {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-row {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-around;
+  height: 45%;
+}
+
+.portfolio-col {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #FCF8D1;
+  background-color: #fff;
+}
+
+.portfolio-col:hover {
+  box-shadow: 6px 8px 20px #FCF8D1;
+}
+
+.portfolio-col {
+  -webkit-transition-property: box-shadow;
+  -webkit-transition-duration: .5s;
+  transition-property: box-shadow;
+  transition-duration: .5s;
+}
+
+.port-col-row {
+  height: 50%;
+  border: 1px solid white;
+}
+
+.portfolio h3 {
+  color: #fff;
+  padding-top: 5%;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.pricing {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-title {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing h3 {
+  color: #000;
+  padding-top: 5%;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.pricing-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.pricing-col {
+  flex-basis: 25%;
+  border-right: 1px solid silver;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-col > span {
+  margin-left: 30%;
+}
+
+.pricing-col h4 {
+  font-size: 32px;
+  font-variant: small-caps;
+  text-align: center;
+  padding-top: 2%;
+  color: #092327;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid silver;
+}
+
+.pricing-col p {
+  font-weight: 300;
+  font-size: 20px;
+  font-variant: small-caps;
+  color: #092327;
+  padding-top: 8%;
+  padding-left: 2%;
+  border-bottom: 1px solid silver;
+  padding-bottom: 2%;
+}
+
+.option-text {
+  display: inline-block;
+  width: 65%;
+}
+
+.price-box {
+  position: relative;
+    left: 15%;
+}
+
+#premium {
+  color: #0fa;
+}
+
+.purchase-btn {
+  height: 40px;
+  width: 133px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #2E71C7;
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+}
+
+.purchase-btn:hover {
+  background-color: #21518E;
+}
+
+.purchase-btn {
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .3s;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+#flexible {
+  font-variant: small-caps;
+}
+
+.check {
+}
+
+.select {
+}
+
+.request {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #4e8098
+}
+
+.request-title {
+  display: flex;
+  justify-content: center;
+}
+
+.request-title h3 {
+  color: #fff;
+  padding-top: 5%;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.hero-scroll {
+  display: block;
+  position: relative;
+  top: 10%;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: bounce .5s infinite alternate;
+  -moz-animation: bounce .5s infinite alternate;
+  animation: bounce .5s infinite alternate;
+}
+
+.services-scroll {
+  display: block;
+  position: relative;
+  top: 5%;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: bounce .5s infinite alternate;
+  -moz-animation: bounce .5s infinite alternate;
+  animation: bounce .5s infinite alternate;
+}
+
+.portfolio-scroll {
+  display: block;
+  position: relative;
+  top: 15%;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: bounce .5s infinite alternate;
+  -moz-animation: bounce .5s infinite alternate;
+  animation: bounce .5s infinite alternate;
+}
+
+.pricing-scroll {
+  display: block;
+  position: relative;
+  top: 15%;
+  text-align: center;
+  color: #000;
+  -webkit-animation: bounce .5s infinite alternate;
+  -moz-animation: bounce .5s infinite alternate;
+  animation: bounce .5s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(.7); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(.7); }
+}
+@keyframes bounce {
+  to { transform: scale(.7); }
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  background-color: #092327;
+  justify-content: center;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  margin-top: 20px;;
+  height: 150px;
+  color: #fff;
+}
+
+.footer-col h4 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5%;
+}
+
+.footer-col p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.footer-col span {
+  text-align: center;
+}
+
+.socials {
+  color: #fff;
+  text-shadow: 1px 1px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-instagram:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.socials {
+  -webkit-transition-property: color background-color;
+  -webkit-transition-duration: .3s;
+  transition-property: color background-color;
+  transition-duration: .3s;
+}
